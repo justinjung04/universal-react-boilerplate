@@ -6,7 +6,7 @@ const createApp = React => ({ title }) => {
 
   return (
     <div>
-      <Title title={ title } />
+      <Title title='Home' />
     </div>
   );
 };

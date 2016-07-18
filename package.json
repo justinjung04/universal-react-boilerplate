@@ -12,25 +12,6 @@
     "server": "cross-env NODE_PATH=source babel-node source/server/server.js",
     "lint": "eslint source/ static/"
   },
-  "engines": {
-    "node": ">=4"
-  },
-  "os": [
-    "darwin",
-    "linux"
-  ],
-  "keywords": [
-    "react",
-    "reactjs",
-    "boilerplate",
-    "webpack",
-    "babel",
-    "react-transform"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:cloverfield-tools/universal-react-boilerplate.git"
-  },
   "devDependencies": {
     "babel-cli": "6.6.5",
     "babel-core": "6.7.7",
@@ -44,7 +25,8 @@
     "eslint-plugin-react": "4.2.2",
     "rimraf": "2.5.2",
     "webpack": "1.12.14",
-    "webpack-dev-middleware": "1.5.1"
+    "webpack-dev-middleware": "1.5.1",
+    "webpack-hot-middleware": "^2.12.1"
   },
   "dependencies": {
     "express": "4.13.4",
@@ -58,8 +40,12 @@
     "redux-thunk": "2.0.1"
   },
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cloverfield-tools/universal-react-boilerplate/issues"
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:justinjung04/universal-react-boilerplate.git"
   },
-  "homepage": "https://github.com/cloverfield-tools/universal-react-boilerplate"
+  "bugs": {
+    "url": "https://github.com/justinjung04/universal-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/justinjung04/universal-react-boilerplate"
 }

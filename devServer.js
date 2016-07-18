@@ -9,11 +9,23 @@ const NODE_HOST = process.env.NODE_HOST || settings.NODE_HOST;
 
 app.use(require('webpack-dev-middleware')(compiler, {
   noInfo: true,
-  publicPath: config.output.publicPath
+  publicPath: config.output.publicPath,
+  stats: {
+    assets: false,
+    colors: true,
+    version: false,
+    hash: false,
+    timings: false,
+    chunks: false,
+    chunkModules: false
+  }
 }));
+
+// app.use(require('webpack-hot-middleware')(compiler));
 
 const serverURL = `http://${NODE_HOST}:${NODE_PORT}`;
 
 app.listen(NODE_PORT, NODE_HOST, (err) => err ?
   console.error(err) :
-  console.log(`Listening at ${serverURL}`);
+  console.log(`Listening at ${serverURL}`)
+);
