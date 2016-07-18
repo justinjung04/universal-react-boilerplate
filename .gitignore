@@ -1,10 +1,4 @@
-node_modules
-!app/node_modules
 .DS_Store
-config/BUILD
+node_modules
 npm-debug.log
-app/node_modules/public/js/bundle.*
 build/
-.idea/
-.eslintcache
-/reports
